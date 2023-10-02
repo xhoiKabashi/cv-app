@@ -1,0 +1,76 @@
+/* Define custom CSS variables */
+:root {
+  --main-color: #2e424d;
+  --card-color: #eaebed;
+  --text-color: #353431;
+  --second-color: #98dad9;
+  --border-icon-color: #98dad9;
+  background-color: var(--main-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the card container */
+.card {
+  padding: 20px;
+  height: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Style the card title */
+.card-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.img-place {
+  height: 200px;
+  width: 200px;
+  background-color: var(--main-color);
+  margin: 0 auto;
+  background-image: url(./public/face-man-shimmer-outline.svg);
+  border-radius: 10px;
+}
+
+/* Style the image container */
+.img-container {
+  margin-top: 20px;
+}
+
+/* Style the uploaded image */
+.uploaded-image {
+  width: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Style the card actions container */
+.card-actions {
+  margin-top: 20px;
+}
+
+/* Style the file input */
+input[type="file"] {
+  display: none;
+}
+
+/* Style the custom file input button */
+.custom-file-input,
+.save-button {
+  background-color: var(--main-color);
+  color: var(--card-color);
+  padding: 4px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.custom-file-input:hover,
+.save-button:hover {
+  background-color: var(--border-icon-color);
+  color: var(--main-color);
+}
+
+/* Style the save button */

@@ -1,0 +1,52 @@
+.about-container {
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 3fr;
+  grid-template-areas:
+    "a a"
+    "b c"
+    "e e"
+    "f f";
+  gap: 10px 20px;
+}
+
+/* Applying the Text Area */
+.title {
+  grid-area: a;
+}
+
+.inputName {
+  grid-area: b;
+  width: 100%;
+}
+
+.inputLast {
+  grid-area: c;
+  width: 100%;
+}
+
+.profession {
+  grid-area: e;
+}
+
+.profile {
+  grid-area: f;
+}
+
+/* Styles for the textarea element */
+textarea {
+  height: 460px; /* Set the static height */
+  resize: none; /* Prevent resizing by the user */
+  border: none;
+  margin-top: 5px;
+}
+
+/* Styles for child elements within .profile (not shown in provided HTML) */
+.profile > * {
+  height: 100px;
+  width: 100%;
+}
+
+

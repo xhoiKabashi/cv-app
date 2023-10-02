@@ -1,0 +1,9 @@
+.scrollable-div {
+  max-height: 340px; /* Adjust the height as needed */
+  overflow-y: auto; /* Add vertical scrollbar if content overflows */
+  /* Other styles like background color, border, etc. */
+}
+
+.scrollable-div input {
+  width: 95%;
+}

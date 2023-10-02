@@ -1,0 +1,28 @@
+@media (max-width: 1000px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 70%;
+  }
+  .super-container {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-container {
+    width: 99%;
+    height: 500px;
+  }
+  .cv-container {
+    width: 100%;
+    height: 100vh;
+  }
+  .super-cv-container {
+    width: 100%;
+    height: 500px;
+  }
+}
