@@ -249,7 +249,7 @@ function App() {
             {next === 8 && <ImageUploader onImageUpload={handleImageUpload} />}
             <div className="buttons-class">
               <button onClick={handlePreviousForm}>Prev</button>
-              {next === 8  ? (
+              {next === 8 ? (
                 <button onClick={downloadPDF} disabled={!(loader === false)}>
                   {loader ? <span>Print</span> : <span>Printed</span>}
                 </button>
@@ -288,7 +288,7 @@ function App() {
           </nav>
           <div className="sidebar-container">
             {/* Contact */}
-            <p> Contact</p>
+            <p className="sidebar-headlinders"> Contact</p>
             <div className="contact-cv">
               <p>{website}</p>
               <p>{email}</p>
@@ -296,7 +296,7 @@ function App() {
               <p>{phone}</p>
             </div>
             {/* Education */}
-            <p> Education</p>
+            <p className="sidebar-headlinders"> Education</p>
             <div className="education-cv">
               <p className="edu-degree-title">{degree}</p>
               <p className="edu-uni-title">{university}</p>
@@ -312,7 +312,7 @@ function App() {
               </p>
             </div>
             {/* Skills */}
-            <p>Skills</p>
+            <p className="sidebar-headlinders">Skills</p>
             <div className="skills-cv">
               <p>{skills}</p>
               <p>{skills1}</p>
@@ -325,14 +325,14 @@ function App() {
               <p>{skills8}</p>
               <p>{skills9}</p>
             </div>
-            <p>Hobbies</p>
+            <p className="sidebar-headlinders">Hobbies</p>
             <div className="skills-cv">
               <p>{hobby}</p>
               <p>{hobby1}</p>
               <p>{hobby2}</p>
               <p>{hobby3}</p>
             </div>
-            <p>Languages</p>
+            <p className="sidebar-headlinders">Languages</p>
             <div className="skills-cv">
               <p>{lang}</p>
               <p>{lang1}</p>

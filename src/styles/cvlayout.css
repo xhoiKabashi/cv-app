@@ -94,6 +94,9 @@
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
 }
+.underline-cv h4 {
+  font-size: 13px;
+}
 
 .about-work {
   width: 90%;
@@ -164,4 +167,170 @@
   align-items: center;
   color: var(--text-color);
   font-size: 12px;
+}
+
+/* meeeeeeeeeeediaaaaaaaaaaaaaaaaaaaaaaa */
+
+@media (max-width: 1000px) {
+  .super-cv-container {
+    width: 100%;
+    height: 100vh;
+  }
+  .super-cv-container * {
+    box-sizing: border-box;
+  }
+
+  .cv-container {
+    margin-top: 10px;
+    background-color: var(--card-color);
+    height: 100vh;
+    /* width: 700px; */
+    /* border: 2px solid green; */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 70px 1fr;
+    grid-template-areas:
+      "nav nav"
+      "sidebar mainbody";
+  }
+  /* navbar syling */
+  .nav-container {
+    background-color: var(--card-color);
+    grid-area: nav;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .img-cv {
+    width: 30%;
+    /* height: auto; */
+  }
+  .img-cv img {
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    margin: 4px;
+  }
+  .name-profession {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .full-name {
+    display: flex;
+    gap: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+  }
+  .last-name {
+    font-weight: 200;
+  }
+  .profession-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 90%;
+    height: 20px;
+    border-radius: 15px;
+    font-weight: 200;
+  }
+
+  .body-container {
+    grid-area: mainbody;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .underline-cv {
+    text-align: center;
+    width: 100%;
+    text-decoration: underline var(--border-icon-color) 2px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .about-work {
+    width: 90%;
+    float: left;
+    white-space: normal;
+    font-size: 7px;
+  }
+  .experience-work {
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 90%;
+  }
+  .experience-work * {
+    height: fit-content;
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 7px;
+  }
+  /* .experience-work h4 {
+    text-decoration: underline var(--border-icon-color);
+  } */
+  .experience-work h4 {
+    color: var(--main-color);
+  }
+  .experience-work h5 {
+    color: var(--second-color);
+  }
+
+  .experience-work p {
+    font-size: 9px;
+  }
+  .sidebar-container {
+    grid-area: sidebar;
+    background-color: var(--second-color);
+    border-top-right-radius: 15px;
+    color: var(--card-color);
+    text-align: center;
+  }
+
+  .sidebar-headlinders {
+    font-size: 8px;
+  }
+
+  .contact-cv,
+  .education-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: var(--text-color);
+    font-size: 6px;
+    margin-left: 5px;
+    padding-bottom: 2px;
+  }
+  .contact-cv p,
+  .education-cv p,
+  .skills-cv p {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: bolder;
+  }
+  .edu-degree-title {
+    font-size: larger;
+    border-bottom: 2px solid var(--card-color);
+    font-size: 8px;
+  }
+  .edu-uni-title + p {
+    font-size: 6px;
+  }
+
+  .skills-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 6px;
+  }
 }
