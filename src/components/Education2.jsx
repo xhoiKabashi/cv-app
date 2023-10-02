@@ -60,14 +60,14 @@ function Education2({ setDegree2, setUniversity2, setFromDate2, setToDate2 }) {
           value={inputFromDate}
           onChange={handelingInputFromDate}
           name="from"
-          maxLength={4}
+          maxLength={7}
         />
       </div>
       <div className="toEducation">
         <label htmlFor="to">To</label>
         <input
           type="tel"
-          maxLength={4}
+          maxLength={7}
           placeholder="2018"
           value={inputToDate}
           onChange={handelingInputToDate}

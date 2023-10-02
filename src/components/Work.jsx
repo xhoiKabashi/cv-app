@@ -72,14 +72,14 @@ function Work({
           value={inputWorkFromDate}
           onChange={handelingInputWorkFromDate}
           name="from"
-          maxLength={4}
+          maxLength={7}
         />
       </div>
       <div className="toWork">
         <label htmlFor="to">To</label>
         <input
           type="tel"
-          maxLength={4}
+          maxLength={7}
           placeholder="2023"
           value={inputWorkToDate}
           onChange={handelingInputWorkToDate}
